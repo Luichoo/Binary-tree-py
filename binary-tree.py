@@ -3,7 +3,7 @@ Binary tree copied from my my binary tree in C with some extra details
 
 '''
 from os import system
-
+import time
 
 letters={
     "n0":0,
@@ -202,25 +202,36 @@ def title():
 )
 def inorderM():
     print("inorder")
+    start = time.time()
     inorder()
+    print("Total time = %.6f" % (time.time()-start))
     print("-------------------------------")
     print("inorder iterative")
+    start = time.time()
     inorder_iterative()
+    print("Total time = %.6f" % (time.time()-start))
     print("-------------------------------")
 def preorderM():
     print("preorder")
+    start = time.time()
     preorder()
+    print("Total time = %.6f" % (time.time()-start))
     print("-------------------------------")
     print("preorder iterative")
+    start = time.time()
     preorder_iterative()
-
+    print("Total time = %.6f" % (time.time()-start))
     print("-------------------------------")
 def postorderM():
     print("postorder")
+    start = time.time()
     postorder()
+    print("Total time = %.6f" % (time.time()-start))
     print("-------------------------------")
     print("postorder iterative")
+    start = time.time()
     postorder_iterative()
+    print("Total time = %.6f" % (time.time()-start))
     print("-------------------------------")
 
 options={1:inorderM,2:preorderM,3:postorderM,4:traductor,0:Salida}
