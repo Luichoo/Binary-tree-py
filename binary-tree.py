@@ -200,8 +200,30 @@ def title():
             "                                         Y8b d88P\n", 
             "                                          \"Y88P\"\n"  
 )
+def inorderM():
+    print("inorder")
+    inorder()
+    print("-------------------------------")
+    print("inorder iterative")
+    inorder_iterative()
+    print("-------------------------------")
+def preorderM():
+    print("preorder")
+    preorder()
+    print("-------------------------------")
+    print("preorder iterative")
+    preorder_iterative()
 
-options={1:inorder,2:preorder,3:postorder,4:traductor,0:Salida}
+    print("-------------------------------")
+def postorderM():
+    print("postorder")
+    postorder()
+    print("-------------------------------")
+    print("postorder iterative")
+    postorder_iterative()
+    print("-------------------------------")
+
+options={1:inorderM,2:preorderM,3:postorderM,4:traductor,0:Salida}
 def menu():
     try:
         title()
